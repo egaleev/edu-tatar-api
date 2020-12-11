@@ -57,6 +57,19 @@ def alll_marks():
         return jsonify('''{"error" : true, "error_text" : "day, year, month is required"}''')
     a = api.day_info(login, password, unix_day)
     return str(a).encode('utf-8')
+
+@app.route('/documentation/about_me')
+def asd():
+    return render_template('about.html')
+
+@app.route('/documentation/day_info')
+def asddd():
+    return render_template('day.html')
+
+@app.route('/documentation/all_marks')
+def asdd():
+    return render_template('period.html')
+
 def main():
     port = int(os.environ.get("PORT", 80))
     app.run(host='0.0.0.0', port=port)
