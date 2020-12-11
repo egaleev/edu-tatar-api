@@ -1,0 +1,9 @@
+{% extends "api.html" %}
+
+{% block content %}
+                       <p>Получение оценок за день:</p>
+                    <div class="toctree-wrapper compound">
+                        Для получения оценок и уроков за день, необходимо сделать запрос на <a class="reference internal" href="/daily">https://stripess.ml/daily</a>,
+                        обязательно указав в query string parametres логин, пароль, год, месяц и день дня в формате </br> ?login={login}&password={password}&day={day}&month={month}&year={year}
+                    </div>
+{% endblock %}
