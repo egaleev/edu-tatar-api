@@ -14,7 +14,8 @@ def main_page():
     return render_template("index.html")
 @app.route('/documentation')
 def docs():
-    return "docs"
+    return render_template("test.html")
+
 @app.route('/about_me')
 def about_me():
     args = request.args
