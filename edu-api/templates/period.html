@@ -1,0 +1,9 @@
+{% extends "api.html" %}
+
+{% block content %}
+                       <p>Просмотр табеля успеваемости:</p>
+                    <div class="toctree-wrapper compound">
+                        Для табеля успеваемости, необходимо сделать запрос на <a class="reference internal" href="/all_marks">https://stripess.ml/all_marks</a>,
+                        обязательно указав в query string parametres логин, пароль и период (четверть или полугодие) в формате ?login={login}&password={password}&period={period}
+                    </div>
+{% endblock %}
